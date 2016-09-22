@@ -2,10 +2,9 @@
 # v2016-09-20 https://github.com/undefinedmode
 # TODO known bugs: move option will overwrite files with identical names
 # Script to find photo's on a drive (by filename notation) and copy/move them to a another folder. Very useful for people who have had camera's from multiple vendors over the years.
-myuser=$(whoami)
 # Set Destination folder
 timestamp=$(date +%F_%H%M%S)
-d="/home/$myuser/phtsearch-$timestamp"
+d="$HOME/phtsearch-$timestamp"
 ##################################################################
 echo "Source dir is:"
 echo -e "\e[101m$(pwd)\e[00m"
